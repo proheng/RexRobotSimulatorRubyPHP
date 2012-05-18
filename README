@@ -1,0 +1,35 @@
+Toy Robot Simulator
+Requirements
+PHP 5.2 or later
+Ruby 1.9 or later
+
+Instruction
+The application is programmed to run in terminal. 
+Example:
+	without argument
+		ruby robot.rb
+		./robot.rb 
+		php robot.php
+	with argument
+		php robot.php test.log
+		./robot.rb test.log
+
+If launching application without argument, application will prompt for command.
+If launching application with argument, application 
+
+
+Assumption
+1.	According to requirement quoted, 
+	'A robot that is not on the table can choose the ignore the MOVE, LEFT, RIGHT and REPORT commands.'	,
+	robot can be assumed to be placed outside of table range, 
+	but it will not accept command until it is brought back 
+2.  According to constraint, quoted,
+	'The toy robot must not fall off the table during movement. This also includes the initial placement of the toy robot.',
+	the initial placement cannot out of table, but the placement after a valid initial one can out of table.
+	
+	Thus, for the first placement out of table, the application will flag and ignore the command, until the very first valid placement.
+	
+I enjoy this small task and will be more than happy to program any other application like this as my interest. 
+
+
+Rex
